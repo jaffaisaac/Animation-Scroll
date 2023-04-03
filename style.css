@@ -1,0 +1,32 @@
+/* reset section  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Add same Styling to our page  */
+
+body{
+    background-color: rgba(77, 131, 131, 0.466);
+    color: #0e0d0d;
+}
+section{
+    display: flex;
+    place-items: center;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    height: 100vh;
+}
+/* here is the custom animation tobe applied and actived with javascript  */
+.animation{
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.5s;
+}
+/* this doesnt exit in the HTML but will be actived in the js */
+.scroll_animation{
+    opacity: 1;
+    transform: translateX(0);
+}
